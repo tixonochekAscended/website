@@ -9,6 +9,12 @@ import img_doable from "$lib/assets/doable.png"
 
 export const projs = [
     {
+        "name": "This Website",
+        "description": "🌍 Not much to say here. My portfolio and personal website.",
+        "url": "https://github.com/tixonochekAscended/website"
+    },
+
+    {
         "name": "oko-lang",
         "description": "👁️ An interpreted, non-esoteric programming language. \"Language of vision\".",
         "url": "https://github.com/tixonochekAscended/oko-lang",
@@ -44,13 +50,6 @@ export const projs = [
     },
     
     {
-        "name": "TOSTER (T*)",
-        "description": "✨️ An interpreted, esoteric programming language. Made to break conventions. Beware, includes magic.",
-        "url": "https://github.com/tixonochekAscended/TOSTER...",
-        "img": img_toster
-    },
-    
-    {
         "name": "Luanite",
         "description": "📦 Luanite — the project builder that compiles your Lua app into a self-contained executable. Currently archived with no plans for development.",
         "url": "https://github.com/tixonochekAscended/luanite",
@@ -62,5 +61,12 @@ export const projs = [
         "description": "☕️ T^ is an esoteric interpreted programming language that is based around \"glyphs\" and \"registers\". Heavy inspiration from APL & Assembly.",
         "url": "https://github.com/tixonochekAscended/TGlyph",
         "img": img_tglyph
+    },
+
+    {
+        "name": "TOSTER (T*)",
+        "description": "✨️ An interpreted, esoteric programming language. Made to break conventions. Beware, includes magic.",
+        "url": "https://github.com/tixonochekAscended/TOSTER...",
+        "img": img_toster
     }
 ];
