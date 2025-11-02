@@ -66,7 +66,7 @@ export const projs = [
     {
         "name": "TOSTER (T*)",
         "description": "✨️ An interpreted, esoteric programming language. Made to break conventions. Beware, includes magic.",
-        "url": "https://github.com/tixonochekAscended/TOSTER...",
+        "url": "https://github.com/tixonochekAscended/TOSTER",
         "img": img_toster
     }
 ];
