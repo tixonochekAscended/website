@@ -5,6 +5,7 @@ import img_mrip_VSC from "$lib/assets/mini-rip-vsc.png"
 import img_toster from "$lib/assets/toster.png"
 import img_tglyph from "$lib/assets/tglyph.png"
 import img_luanite from "$lib/assets/luanite.png"
+import img_doable from "$lib/assets/doable.png"
 
 export const projs = [
     {
@@ -19,6 +20,13 @@ export const projs = [
         "description": "🔌 VSCode extension for the oko-lang programming language.",
         "url": "https://github.com/tixonochekAscended/oko-lang-vscode",
         "img": img_oko_VSC
+    },
+
+    {
+        "name": "Doable-Proj",
+        "description": "✅ A task manager (TO-DO app) with Google Login & Registration that helps you get things done.",
+        "url": "https://doable-proj.vercel.app/",
+        "img": img_doable
     },
     
     {
@@ -51,7 +59,7 @@ export const projs = [
 
     {
         "name": "TGlyph (T^)",
-        "description": "☕️ T^ is an esoteric interpreted programming language that is based around 'glyphs' that execute some code based on the arguments given and based on the values of the 'registers'. Heavy inspiration from APL & BQN.",
+        "description": "☕️ T^ is an esoteric interpreted programming language that is based around \"glyphs\" and \"registers\". Heavy inspiration from APL & Assembly.",
         "url": "https://github.com/tixonochekAscended/TGlyph",
         "img": img_tglyph
     }
