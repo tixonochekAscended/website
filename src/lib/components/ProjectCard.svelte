@@ -8,7 +8,7 @@
     let href = props.href ?? "/"
 </script>
 
-<a href={href} class="{props.class} h-min relative overflow-hidden border-1 rounded-xl p-3 border-tBLUE/20 bg-tBLUE/5 shadow-lg shadow-tBLUE/5 hover:shadow-tBLUE/10 transition ease-in-out duration-300 hover:-translate-y-1 hover:bg-tBLUE/10 hover:border-tBLUE/40">
+<a href={href} class="{props.class} relative overflow-hidden border-1 rounded-xl p-3 border-tBLUE/20 bg-tBLUE/5 shadow-lg shadow-tBLUE/5 hover:shadow-tBLUE/10 transition ease-in-out duration-300 hover:-translate-y-1 hover:bg-tBLUE/10 hover:border-tBLUE/40">
     <img 
         class="absolute w-[40%] top-0 right-0 h-full object-cover" 
         src={img} 
