@@ -38,7 +38,7 @@
 
 {#each trail as point, i}
     <div
-        class="fixed pointer-events-none rounded-full z-1000 opacity-20"
+        class="fixed pointer-events-none rounded-full z-[9999] opacity-20"
         style="
     width: {size}px;
     height: {size}px;

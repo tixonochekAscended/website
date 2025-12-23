@@ -6,6 +6,7 @@
     import InfoCard from "$lib/components/InfoCard.svelte";
     import ConnectionCard from "$lib/components/ConnectionCard.svelte";
     import { projs } from "$lib/projects";
+    import { config } from "$lib/config";
 
     let projCount = $state(projs.length);
 </script>
@@ -15,7 +16,7 @@
 </svelte:head>
 
 <div class="flex justify-center items-center flex-col">
-    <div class="text-center border-1 border-gray-800 bg-gray-950 p-3 lg:p-10 m-3 rounded-xl">
+    <div class="text-center border-1 {config.winterTheme ? "border-[#ffffff]/40 bg-[#ffffff]/5" : "border-gray-800 bg-gray-950"} p-3 lg:p-10 m-3 rounded-xl">
         <h1 class="text-4xl lg:text-6xl text-tYELLOW font-bold">
             Hello, I'm <span class="text-tBLUE">tixonochek</span>.
         </h1>
@@ -77,8 +78,8 @@
         </InfoCard>
     </div>
 
-    <div class="text-center p-3 text-2xl font-semibold break-words">
-        🇺🇦 From Ukraine <span class="hidden lg:inline">•</span> <em>#STOP_WAR_IN_UKRAINE</em>
+    <div class="text-center p-3 text-2xl font-semibold">
+        🇺🇦 From Ukraine <span class="hidden lg:inline">•</span> <br class="lg:hiddenm" /> <em>#STOP–WAR–IN–UKRAINE</em>
     </div> <br />
 
     <TSection title="My programming journey" class="lg:p-10 lg:pt-0">
