@@ -79,7 +79,7 @@
     </div>
 
     <div class="text-center p-3 text-2xl font-semibold">
-        🇺🇦 From Ukraine <span class="hidden lg:inline">•</span> <br class="lg:hiddenm" /> <em>#STOP–WAR–IN–UKRAINE</em>
+        🇺🇦 From Ukraine <span class="hidden lg:inline">•</span> <br class="lg:hidden" /> <em>#STOP–WAR–IN–UKRAINE</em>
     </div> <br />
 
     <TSection title="My programming journey" class="lg:p-10 lg:pt-0">
