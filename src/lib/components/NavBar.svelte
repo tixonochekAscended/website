@@ -7,6 +7,7 @@
 
     let isOpen = $state(false);
     let isBlurred = $state(false);
+    let onHoverClass = config.winterTheme ? "text-lime-200" : "text-amber-100";
 
     function flipOpen() {
         isOpen = !isOpen;
@@ -34,7 +35,7 @@
     })
 </script>
 
-<nav class="z-1000 h-30 [&_a]:underline [&_a]:hover:text-amber-100 [&_a]:active:text-amber-100 [&_a]:transition [&_a]:duration-200 fixed top-0 left-0 w-full m-2 lg:m-4 text-tYELLOW">
+<nav class="z-1000 h-30 [&_a]:underline [&_a]:hover:{onHoverClass} [&_a]:active:{onHoverClass} [&_a]:transition [&_a]:duration-200 fixed top-0 left-0 w-full m-2 lg:m-4 text-tYELLOW">
     <div class="flex justify-between lg:justify-center items-center space-x-12 h-full w-full">
         <a class="h-full lg:absolute lg:left-0 p-5 lg:p-3" href="/">
             {#if config.winterTheme}
