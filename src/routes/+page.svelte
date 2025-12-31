@@ -33,7 +33,7 @@
 
         <div class="flex justify-evenly items-center flex-col lg:flex-row lg:p-4 space-y-8 lg:space-y-0 lg:space-x-16 m-4 lg:mb-0 lg:pb-0 mt-7 [&>div]:text-xl">
             <div>
-                <span class="text-tBLUE font-semibold text-4xl">25+</span> <br />
+                <span class="text-tBLUE font-semibold text-4xl">25+ </span> <br />
                 languages explored
             </div>
 
