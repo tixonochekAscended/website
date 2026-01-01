@@ -36,7 +36,7 @@
 
 <Background />
 {#if config.winterTheme}
-<Snow />
+	<Snow />
 {/if}
 
 <div class="hidden lg:flex">

@@ -6,8 +6,7 @@
     let flakes = [];
     let w, h;
 
-    // Constants for a calmer feel
-    const flakeCount = 350;
+    const flakeCount = 200;
     const minSpeed = 0.5;
     const maxSpeed = 1.5;
 

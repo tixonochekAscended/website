@@ -2,7 +2,7 @@
     import Timeline from "$lib/components/Timeline.svelte";
     import TimelineItem from "$lib/components/TimelineItem.svelte";
     import TSection from "$lib/components/TSection.svelte";
-    import Accentize from "$lib/components/Accentize.svelte";
+    import Acc from "$lib/components/Accentize.svelte";
     import InfoCard from "$lib/components/InfoCard.svelte";
     import ConnectionCard from "$lib/components/ConnectionCard.svelte";
     import { projs } from "$lib/projects";
@@ -61,7 +61,7 @@
     </TSection> <br /> <br />
 
     <TSection title="TL;DR">
-        I'm a passionate programmer – coded since I was eight. I have used many programming languages over the years. There is no definitive language that I love the most, but my most favourite ones are <Accentize>JS</Accentize>, <Accentize>Lua</Accentize> and <Accentize>C</Accentize>. Everything about technology interests and excites me.
+        I'm a passionate programmer – coded since I was eight. I have used many programming languages over the years. There is no definitive language that I love the most, but my most favourite ones are <Acc>Lua</Acc> (mostly for toy projects), <Acc>JS</Acc> (mainly for Web) and <Acc>V</Acc> (which is a language I wanna learn and use more). Everything about technology interests and excites me.
     </TSection>
 
     <div class="flex justify-center items-center mt-5 flex-col lg:flex-row">
@@ -89,22 +89,22 @@
             </TimelineItem>
 
             <TimelineItem title="Language Exploration">
-                Over the years I have coded in many programming languages including <Accentize>Python</Accentize>, <Accentize>JS</Accentize>, <Accentize>C#</Accentize>, <Accentize>C</Accentize> & <Accentize>C++</Accentize>, <Accentize>Rust</Accentize>, <Accentize>Java</Accentize>, <Accentize>Haskell</Accentize>, <Accentize>Lua</Accentize> and more.
+                Over the years I have coded in many programming languages including <Acc>Python</Acc>, <Acc>JS</Acc>, <Acc>C#</Acc>, <Acc>C</Acc> & <Acc>C++</Acc>, <Acc>Rust</Acc>, <Acc>Java</Acc>, <Acc>Haskell</Acc>, <Acc>Julia</Acc>, <Acc>Lua</Acc>, <Acc>APL</Acc>, <Acc>BQN</Acc> and many others. This absolutely does not mean that I <em>"know"</em> all of these languages – it just means that I explored them at some point.
             </TimelineItem>
 
             <TimelineItem title="Finding My Favorites">
-                Certain languages like <Accentize>Java</Accentize> were brief experiments. Others like <Accentize>Haskell</Accentize> and <Accentize>Rust</Accentize> were longer journeys. <Accentize>C#</Accentize> and <Accentize>JS</Accentize> became my go-to choices for extended periods.
+                Certain languages like <Acc>Java</Acc> and <Acc>Haskell</Acc> were brief experiments. Others like <Acc>Rust</Acc> were longer journeys. <Acc>C#</Acc> and <Acc>JS</Acc> became my go-to choices for extended periods.
             </TimelineItem>
 
             <TimelineItem isLast title="The Present">
-                It's hard for me to pick a language that I use much more than the others - I always try to pick the best technology for the specific task. On top of that, I just experiment a lot. If I had to specify some of the languages I use the most, those will be <Accentize>JS</Accentize> and <Accentize>Lua</Accentize> with <Accentize>C</Accentize> being a language I want to learn and use more. 
+                It's hard for me to pick a language that I use much more than the others - I always try to pick the best technology for the task. On top of that, I just experiment a lot. If I had to specify some of the languages that I use the most, those will be <Acc>JS</Acc> (mainly for Web) and <Acc>Lua</Acc> (mostly for toy projects) with <Acc>V</Acc> being a language I want to learn and use more.
             </TimelineItem>
         </Timeline>
     </TSection>
 
     <TSection title="What I create">
         I build different kinds of projects, however in this section I'd like to underline my love for programming languages. I have created several of them in the past, such as
-        <Accentize>T^ (TGlyph)</Accentize>, <Accentize>T* (TOSTER)</Accentize>, <Accentize>mini-rip</Accentize> & <Accentize>oko-lang</Accentize>. The whole process of creating a language (often an esoteric one) just makes me go wild. 
+        <Acc>T^ (TGlyph)</Acc>, <Acc>T* (TOSTER)</Acc>, <Acc>mini-rip</Acc> & <Acc>oko-lang</Acc>. The whole process of creating a language (often an esoteric one) just makes me go wild.
 
         <div class="text-center flex justify-center items-center m-3 mb-10 text-2xl">
             <a href="/projects/" class="group p-3 rounded-xl border-1 border-tBLUE/20 text-tBLUE bg-tBLUE/5 hover:border-tBLUE/40 hover:bg-tBLUE/10 font-bold shadow-lg shadow-tBLUE/5 hover:shadow-tBLUE/15 transition ease-in-out duration-300 hover:-translate-y-1">
@@ -118,9 +118,9 @@
     </TSection>
 
     <TSection title="Get in touch">
-        Want to get in touch with me? No problem — I would be happy to collaborate with you or answer some questions.
+        Want to get in touch with me? No problem – I would be happy to collaborate with you or answer some questions.
 
-        <div class="m-3 flex justify-center items-center flex-col lg:flex-row">
+        <div class="m-3 flex justify-center flex-col lg:flex-row">
             <ConnectionCard href="https://discord.gg/NSK7YJ2R6j" emoji="💬" title="Discord Community" description="Most reliable way, I chat there daily"/>
             <ConnectionCard href="https://t.me/tixonochek" emoji="📱" title="Telegram" description="Quick messages and responses"/>
             <ConnectionCard href="mailto:awonderfulwise@gmail.com" emoji="✉️" title="Email" description="For formal inquiries and projects"/>
