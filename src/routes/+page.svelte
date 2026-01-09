@@ -121,7 +121,7 @@
         Want to get in touch with me? No problem – I would be happy to collaborate with you or answer some questions.
 
         <div class="m-3 flex justify-center flex-col lg:flex-row">
-            <ConnectionCard href="https://discord.gg/NSK7YJ2R6j" emoji="💬" title="Discord Community" description="Most reliable way, I chat there daily"/>
+            <ConnectionCard href="https://www.onlito.link/0ycmTk" emoji="💬" title="Discord Community" description="Most reliable way, I chat there daily"/>
             <ConnectionCard href="https://t.me/tixonochek" emoji="📱" title="Telegram" description="Quick messages and responses"/>
             <ConnectionCard href="mailto:awonderfulwise@gmail.com" emoji="✉️" title="Email" description="For formal inquiries and projects"/>
         </div>
