@@ -1,3 +1,3 @@
 export const config = {
-    winterTheme: true
+    winterTheme: false
 }
