@@ -125,5 +125,9 @@
             <ConnectionCard href="https://t.me/tixonochek" emoji="📱" title="Telegram" description="Quick messages and responses"/>
             <ConnectionCard href="mailto:awonderfulwise@gmail.com" emoji="✉️" title="Email" description="For formal inquiries and projects"/>
         </div>
+
+        <div class="mt-10">
+            <iframe src="https://discord.com/widget?id=1051655906322030592&theme=dark" class="w-full" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" title="Discord–віджет"></iframe>
+        </div>
     </TSection>
 </div>

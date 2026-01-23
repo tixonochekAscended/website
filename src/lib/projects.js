@@ -51,7 +51,7 @@ export const projs = [
     
     {
         "name": "Luanite",
-        "description": "📦 Luanite — the project builder that compiles your Lua app into a self-contained executable. Currently archived with no plans for development.",
+        "description": "📦 Luanite — the project builder that compiles your Lua app into a self-contained executable. Currently archived with no plans for further development.",
         "url": "https://github.com/tixonochekAscended/luanite",
         "img": img_luanite
     },

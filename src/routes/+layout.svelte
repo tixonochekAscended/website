@@ -1,6 +1,7 @@
 <script>
-	let { children } = $props();
+	let { children, data } = $props();
 	
+	import { fly, fade } from 'svelte/transition';
 	import icon from "$lib/assets/favicon.jpg";
 	import icon_xmas from "$lib/assets/favicon_xmas.jpg"
     import Background from "$lib/components/Background.svelte";
@@ -12,29 +13,30 @@
 
 <svelte:head>
 	{#if config.winterTheme}
-	<link rel="icon" href={icon_xmas}>
+		<link rel="icon" href={icon_xmas}>
 	{:else}
-	<link rel="icon" href={icon}>
+		<link rel="icon" href={icon}>
 	{/if}
 
 	{#if config.winterTheme}
-	<style type="text/tailwindcss">
-		@theme {
-			--color-tYELLOW: #b1edb4;
-			--color-tBLUE: #ed7b7b;
-		}
-	</style>
+		<style type="text/tailwindcss">
+			@theme {
+				--color-tYELLOW: #b1edb4;
+				--color-tBLUE: #ed7b7b;
+			}
+		</style>
 	{:else}
-	<style type="text/tailwindcss">
-		@theme {
-			--color-tYELLOW: #f5deb3;
-			--color-tBLUE: #add8e6;
-		}
-	</style>
+		<style type="text/tailwindcss">
+			@theme {
+				--color-tYELLOW: #f5deb3;
+				--color-tBLUE: #add8e6;
+			}
+		</style>
 	{/if}
 </svelte:head>
 
 <Background />
+
 {#if config.winterTheme}
 	<Snow />
 {/if}
@@ -47,6 +49,8 @@
 	<NavBar />
 </div>
 
-<main class="p-3 lg:p-5 mt-35 text-stone-300">
+{#key data.pathname}
+<div class="p-3 lg:p-5 mt-35 text-stone-300" in:fly={{ y: 20, duration: 300, delay: 150 }} out:fade={{ duration: 150 }} >
 	{@render children?.()}
-</main>
+</div>
+{/key}
