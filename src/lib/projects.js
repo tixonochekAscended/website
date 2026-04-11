@@ -6,12 +6,26 @@ import img_toster from "$lib/assets/toster.png"
 import img_tglyph from "$lib/assets/tglyph.png"
 import img_luanite from "$lib/assets/luanite.png"
 import img_doable from "$lib/assets/doable.png"
+import img_lastivka from "$lib/assets/lastivka.png"
 
 export const projs = [
     {
         "name": "This Website",
-        "description": "🌍 Not much to say here. My portfolio and personal website.",
+        "description": "🌍 Not much to say here. My personal website which also acts as a portfolio. Home for my projects and different achievements.",
         "url": "https://github.com/tixonochekAscended/website"
+    },
+
+    {
+        "name": "My Discord Community",
+        "description": "💻 Widely considered the best Ukrainian Discord community for programmers and tech enthusiasts — built by me from the ground up.",
+        "url": "https://discord.gg/NSK7YJ2R6j"
+    },
+
+    {
+        "name": "lastivka",
+        "description": "🐦‍⬛ A discord bot for the aforementioned Discord community, featuring moderation, economy and much more.",
+        "url": "https://discord.gg/NSK7YJ2R6j",
+        "img": img_lastivka
     },
 
     {
@@ -30,7 +44,7 @@ export const projs = [
 
     {
         "name": "Doable-Proj",
-        "description": "✅ A task manager (TO-DO app) with Google Login & Registration that helps you get things done.",
+        "description": "✔️ A task manager with Google integration that helps you get things done. My first project built with SvelteKit.",
         "url": "https://doable-proj.vercel.app/",
         "img": img_doable
     },
