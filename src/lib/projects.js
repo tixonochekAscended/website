@@ -7,18 +7,26 @@ import img_tglyph from "$lib/assets/tglyph.png"
 import img_luanite from "$lib/assets/luanite.png"
 import img_doable from "$lib/assets/doable.png"
 import img_lastivka from "$lib/assets/lastivka.png"
+import img_reviung from "$lib/assets/reviung.jpg"
 
 export const projs = [
     {
-        "name": "This Website",
-        "description": "🌍 Not much to say here. My personal website which also acts as a portfolio. Home for my projects and different achievements.",
-        "url": "https://github.com/tixonochekAscended/website"
+        "name": "Reviung41",
+        "description": "🧰 A custom 40% mechanical keyboard that I've soldered and assembled myself. Hand-crafted tool that makes programming an incredibly comfortable and efficient experience.",
+        "url": "https://github.com/tixonochekAscended/my-reviung41-config",
+        "img": img_reviung
     },
 
     {
         "name": "My Discord Community",
         "description": "💻 Widely considered the best Ukrainian Discord community for programmers and tech enthusiasts — built by me from the ground up.",
         "url": "https://discord.gg/NSK7YJ2R6j"
+    },
+
+    {
+        "name": "This Website",
+        "description": "🌍 Not much to say here. My personal website which also acts as a portfolio. Home for my projects and different achievements.",
+        "url": "https://github.com/tixonochekAscended/website"
     },
 
     {

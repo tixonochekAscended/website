@@ -38,7 +38,7 @@
             </div>
 
             <div>
-                <span class="text-tBLUE font-semibold text-4xl">7+</span> <br />
+                <span class="text-tBLUE font-semibold text-4xl">8+</span> <br />
                 years of experience
             </div>
 
