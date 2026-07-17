@@ -31,7 +31,7 @@
       gradient_smoothness}%, transparent 100%);"
   />
 
-  <div class="relative z-10 pb-10">
+  <div class="relative z-10 lg:pb-10">
     <div class="text-tYELLOW text-2xl font-bold">
       {name}
     </div>
