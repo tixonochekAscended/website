@@ -82,7 +82,7 @@ export const projs = [
       "description": "A task manager with Google integration. My first ever SvelteKit project, built to practise state management.",
       "url": "https://doable-proj.vercel.app/",
       "img": img['doable.png'],
-      "icons": ["node", "svelte", "ts", "js", "vercel", "git"]
+      "icons": ["node", "svelte", "tailwind", "ts", "js", "vercel", "git"]
   },
 
   {
