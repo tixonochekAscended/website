@@ -7,85 +7,97 @@ const img = Object.entries(import.meta.glob([
 }, {});
 
 export const projs = [
-    {
-        "name": "Reviung41",
-        "description": "🧰 A custom 40% mechanical keyboard that I've soldered and assembled myself. A hand-crafted tool that makes programming as comfortable as never before.",
-        "url": "https://github.com/tixonochekAscended/my-reviung41-config",
-        "img": img['reviung.jpg']
-    },
+  {
+      "name": "Reviung41",
+      "description": "A custom 40% mechanical keyboard that I've soldered and assembled myself. A hand-crafted tool that makes programming more comfortable than ever.",
+      "url": "https://github.com/tixonochekAscended/my-reviung41-config",
+      "img": img['reviung.jpg'],
+      "icons": ["zmk", "git"]
+  },
 
-    {
-        "name": "My Discord Community",
-        "description": "💻 Widely considered the best Ukrainian Discord community for programmers and tech enthusiasts — built by me from the ground up.",
-        "url": "https://discord.gg/NSK7YJ2R6j"
-    },
+  {
+      "name": "My Discord Community",
+      "description": "A thriving Ukrainian Discord community for developers and tech enthusiasts, built and organized by me from the ground up.",
+      "url": "https://discord.gg/NSK7YJ2R6j",
+      "icons": ["discord"]
+  },
 
-    {
-        "name": "This Website",
-        "description": "🌍 Not much to say here. My personal website which also acts as a portfolio. Home for my projects and different achievements.",
-        "url": "https://github.com/tixonochekAscended/website"
-    },
+  {
+      "name": "This Website",
+      "description": "My personal website and portfolio, where I share my projects, achievements and tell you my story.",
+      "url": "https://github.com/tixonochekAscended/website",
+      "icons": ["node", "ts", "js", "svelte", "tailwind", "netlify", "git"]
+  },
 
-    {
-        "name": "lastivka",
-        "description": "🐦‍⬛ A discord bot for the aforementioned Discord community featuring moderation, economy and much more.",
-        "url": "https://discord.gg/NSK7YJ2R6j",
-        "img": img['lastivka.png']
-    },
+  {
+      "name": "lastivka",
+      "description": "A feature-rich Discord bot driving my community server with built-in moderation, economy, utilities & much more.",
+      "url": "https://discord.gg/NSK7YJ2R6j",
+      "img": img['lastivka.png'],
+      "icons": ["bun", "ts", "js", "discord", "git"]
+  },
 
-    {
-        "name": "oko-lang",
-        "description": "👁️ An interpreted, non-esoteric programming language. \"Language of vision\".",
-        "url": "https://github.com/tixonochekAscended/oko-lang",
-        "img": img['oko-lang.png']
-    },
-    
-    {
-        "name": "oko-lang VSCode",
-        "description": "🔌 VSCode extension for the oko-lang programming language.",
-        "url": "https://github.com/tixonochekAscended/oko-lang-vscode",
-        "img": img['oko-lang-vsc.png']
-    },
-    
-    {
-        "name": "mini-rip",
-        "description": "🪨 A minimal, esoteric, interpreted programming language with magical sigils that execute code.",
-        "url": "https://github.com/tixonochekAscended/mini-rip",
-        "img": img['mini-rip.png']
-    },
-    
-    {
-        "name": "mini-rip VSCode",
-        "description": "🔌 VSCode extension for the mini-rip programming language. ",
-        "url": "https://github.com/tixonochekAscended/mrip-vscode",
-        "img": img['mini-rip-vsc.png']
-    },
-    
-    {
-        "name": "Luanite",
-        "description": "📦 Luanite — the project builder that compiles your Lua app into a self-contained executable. Currently archived with no plans for further development.",
-        "url": "https://github.com/tixonochekAscended/luanite",
-        "img": img['luanite.png']
-    },
+  {
+      "name": "oko-lang",
+      "description": "An interpreted, non-esoteric programming language designed to prioritize clarity and intuitive syntax.",
+      "url": "https://github.com/tixonochekAscended/oko-lang",
+      "img": img['oko-lang.png'],
+      "icons": ["deno", "ts", "js", "rust", "git"]
+  },
+  
+  {
+      "name": "oko-lang VSCode",
+      "description": "A custom Visual Studio Code extension that adds syntax highlighting and development support for oko.",
+      "url": "https://github.com/tixonochekAscended/oko-lang-vscode",
+      "img": img['oko-lang-vsc.png'],
+      "icons": ["vscode", "js", "git"]
+  },
+  
+  {
+      "name": "mini-rip",
+      "description": "A minimal, esoteric interpreted programming language featuring a custom runtime driven by magical \"sigils\".",
+      "url": "https://github.com/tixonochekAscended/mini-rip",
+      "img": img['mini-rip.png'],
+      "icons": ["lua", "git"]
+  },
+  
+  {
+      "name": "mini-rip VSCode",
+      "description": "A custom Visual Studio Code extension that adds syntax highlighting and development support for mini-rip.",
+      "url": "https://github.com/tixonochekAscended/mrip-vscode",
+      "img": img['mini-rip-vsc.png'],
+      "icons": ["vscode", "js", "git"]
+  },
+  
+  {
+      "name": "Luanite",
+      "description": "The project builder designed to package Lua applications into standalone, self-contained executables.",
+      "url": "https://github.com/tixonochekAscended/luanite",
+      "img": img['luanite.png'],
+      "icons": ["lua", "git"]
+  },
 
-    {
-        "name": "Doable-Proj",
-        "description": "✔️ A task manager with Google integration that helps you get things done. My first ever project built with SvelteKit.",
-        "url": "https://doable-proj.vercel.app/",
-        "img": img['doable.png']
-    },
+  {
+      "name": "Doable-Proj",
+      "description": "A task manager with Google integration. My first ever SvelteKit project, built to practise state management.",
+      "url": "https://doable-proj.vercel.app/",
+      "img": img['doable.png'],
+      "icons": ["node", "svelte", "ts", "js", "vercel", "git"]
+  },
 
-    {
-        "name": "TGlyph (T^)",
-        "description": "☕️ T^ is an esoteric interpreted programming language that is based around \"glyphs\" and \"registers\".",
-        "url": "https://github.com/tixonochekAscended/TGlyph",
-        "img": img['tglyph.png']
-    },
+  {
+      "name": "TGlyph (T^)",
+      "description": "An esoteric, interpreted programming language structured around unique execution glyphs and manipulation of virtual registers.",
+      "url": "https://github.com/tixonochekAscended/TGlyph",
+      "img": img['tglyph.png'],
+      "icons": ["python", "git"]
+  },
 
-    {
-        "name": "TOSTER (T*)",
-        "description": "✨️ An interpreted, esoteric programming language. Made to break conventions. Beware, includes magic.",
-        "url": "https://github.com/tixonochekAscended/TOSTER",
-        "img":  img['toster.png']
-    }
+  {
+      "name": "TOSTER (T*)",
+      "description": "An esoteric, interpreted programming language built to challenge conventional syntax.",
+      "url": "https://github.com/tixonochekAscended/TOSTER",
+      "img":  img['toster.png'],
+      "icons": ["python", "git"]
+  }
 ];

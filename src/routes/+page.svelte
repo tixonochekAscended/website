@@ -1,133 +1,181 @@
 <script>
-    import Timeline from "$lib/components/Timeline.svelte";
-    import TimelineItem from "$lib/components/TimelineItem.svelte";
-    import TSection from "$lib/components/TSection.svelte";
-    import Acc from "$lib/components/Accentize.svelte";
-    import InfoCard from "$lib/components/InfoCard.svelte";
-    import ConnectionCard from "$lib/components/ConnectionCard.svelte";
-    import { projs } from "$lib/projects";
-    import { config } from "$lib/config";
+  import Timeline from "$lib/components/Timeline.svelte";
+  import TimelineItem from "$lib/components/TimelineItem.svelte";
+  import TSection from "$lib/components/TSection.svelte";
+  import Acc from "$lib/components/Accentize.svelte";
+  import InfoCard from "$lib/components/InfoCard.svelte";
+  import ConnectionCard from "$lib/components/ConnectionCard.svelte";
+  import { projs } from "$lib/projects";
+  import { config } from "$lib/config";
+    import TAnchor from "$lib/components/TAnchor.svelte";
+    import Icon from "$lib/components/Icon.svelte";
 
-    let projCount = $state(projs.length);
+  let projCount = $state(projs.length);
 </script>
 
 <svelte:head>
-    <title>Home – @tixonochek's</title>
+  <title>Home — @tixonochek's</title>
 </svelte:head>
 
 <div class="flex justify-center items-center flex-col">
-    <div class="text-center border-1 {config.winterTheme ? "border-[#ffffff]/40 bg-[#ffffff]/5" : "border-gray-800 bg-gray-950"} p-3 lg:p-10 m-3 rounded-xl">
-        <h1 class="text-4xl lg:text-6xl text-tYELLOW font-bold">
-            Hello, I'm <span class="text-tBLUE">tixonochek</span>.
-        </h1>
+  <div
+    class="min-[960px]:max-[1150px]:scale-85 text-center border-1 {config.winterTheme
+      ? 'border-[#ffffff]/40 bg-[#131316]'
+      : 'border-tBLUE/20 bg-gray-950'} p-3 lg:p-10 m-3 rounded-xl"
+  >
+    <h1 class="text-4xl lg:text-6xl text-tYELLOW font-bold">
+      Hello, I'm <span class="text-tBLUE">tixonochek</span>.
+    </h1>
 
-        <div class="flex justify-center items-center text-xl mt-3 lg:m-3 space-y-2 lg:space-y-0 lg:space-x-5 flex-col lg:flex-row text-stone-100">
-            <span>Web Developer</span>
-            <span class="hidden lg:flex">~</span>
-            <span>Languages Creator</span>
-            <span class="hidden lg:flex">~</span>
-            <span>Open Source Advocate</span>
-            <span class="hidden lg:flex">~</span>
-            <span>Passionate Programmer</span>
-        </div>
-
-        <div class="flex justify-evenly items-center flex-col lg:flex-row lg:p-4 space-y-8 lg:space-y-0 lg:space-x-16 m-4 lg:mb-0 lg:pb-0 mt-7 [&>div]:text-xl">
-            <div>
-                <span class="text-tBLUE font-semibold text-4xl">25+ </span> <br />
-                languages explored
-            </div>
-
-            <div>
-                <span class="text-tBLUE font-semibold text-4xl">8+</span> <br />
-                years of experience
-            </div>
-
-            <div>
-                <span class="text-tBLUE font-semibold text-4xl">4</span> <br />
-                programming languages created
-            </div>
-
-            <div class="border-zinc-700 bg-zinc-950 p-3 border-1 rounded-xl">
-                <span class="text-tYELLOW font-semibold text-4xl">{projCount}</span> <br />
-                projects built
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="p-3 m-3">
-    <TSection title="Welcome to my corner of the internet">
-        This is my personal website, where you can find lots of information regarding me and my projects. Feel free to explore my portfolio, read about my experience, or get in touch if you'd like to contact me. 
-    </TSection> <br /> <br />
-
-    <TSection title="TL;DR">
-        I'm a passionate programmer – coded since I was eight. I have used many programming languages over the years. There is no definitive language that I love the most, but my most favourite ones are <Acc>Lua</Acc> (mostly for toy projects), <Acc>JS</Acc> (mainly for Web) and <Acc>V</Acc> (which is a language I wanna learn and use more). Everything about technology interests and excites me.
-    </TSection>
-
-    <div class="flex justify-center items-center mt-5 flex-col lg:flex-row">
-        <InfoCard emoji="💻" title="Web Development">
-            I enjoy building interactive, responsive web apps and crafting clean, efficient code
-        </InfoCard>
-
-        <InfoCard emoji="🌍" title="Open Source Advocate">
-            I always strive to contribute to free, open source software
-        </InfoCard>
-
-        <InfoCard emoji="🚀" title="Languages Enthusiast">
-            I have created multiple languages in the past myself
-        </InfoCard>
+    <div
+      class="flex justify-center items-center text-xl mt-3 lg:m-3 space-y-2 lg:space-y-0 lg:space-x-5 flex-col lg:flex-row text-stone-100"
+    >
+      <span>Passionate Programmer</span>
+      <span class="hidden lg:flex">~</span>
+      <span>Hardworking Student</span>
+      <span class="hidden lg:flex">~</span>
+      <span>Programming Languages Creator</span>
     </div>
 
-    <div class="text-center p-3 text-2xl font-semibold">
-        🇺🇦 From Ukraine <span class="hidden lg:inline">•</span> <br class="lg:hidden" /> <em>#STOP–WAR–IN–UKRAINE</em>
-    </div> <br />
+    <div
+      class="flex justify-evenly items-center flex-col lg:flex-row lg:p-4 space-y-8 lg:space-y-0 lg:space-x-16 m-4 lg:mb-0 lg:pb-0 mt-7 [&>div]:text-xl"
+    >
+      <div>
+        <span class="text-tBLUE font-semibold text-4xl">25+</span> <br />
+        languages explored
+      </div>
 
-    <TSection title="My programming journey" class="lg:p-10 lg:pt-0">
-        <Timeline>
-            <TimelineItem title="The Beginning">
-                I was experimenting with technology since I was eight years old. Since then, I fell in love with everything related to it, including programming, which is my favourite thing to do.
-            </TimelineItem>
+      <div>
+        <span class="text-tBLUE font-semibold text-4xl">8+</span> <br />
+        years of programming
+      </div>
 
-            <TimelineItem title="Language Exploration">
-                Over the years I have coded in many programming languages including <Acc>Python</Acc>, <Acc>JS</Acc>, <Acc>C#</Acc>, <Acc>C</Acc> & <Acc>C++</Acc>, <Acc>Rust</Acc>, <Acc>Java</Acc>, <Acc>Haskell</Acc>, <Acc>Julia</Acc>, <Acc>Lua</Acc>, <Acc>APL</Acc>, <Acc>BQN</Acc> and many others. This absolutely does not mean that I <em>"know"</em> all of these languages – it just means that I explored them at some point.
-            </TimelineItem>
+      <div>
+        <span
+          class="text-tBLUE font-semibold text-4xl inline-flex items-center"
+        >
+          1
+          <span
+            class="inline-flex flex-col text-[0.5em] leading-none align-middle mx-1 text-center"
+          >
+            <span class="border-b-2 border-current pb-0.5">1</span>
+            <span class="pt-0.5">2</span>
+          </span>
+          +
+        </span>
+        <br />
+        years of commercial
+        <span class="whitespace-nowrap">Web Dev experience</span>
+      </div>
 
-            <TimelineItem title="Finding My Favorites">
-                Certain languages like <Acc>Java</Acc> and <Acc>Haskell</Acc> were brief experiments. Others like <Acc>Rust</Acc> were longer journeys. <Acc>C#</Acc> and <Acc>JS</Acc> became my go-to choices for extended periods.
-            </TimelineItem>
+      <div>
+        <span class="text-tBLUE font-semibold text-4xl">4</span> <br />
+        programming <span class="whitespace-nowrap">languages created</span>
+      </div>
 
-            <TimelineItem isLast title="The Present">
-                It's hard for me to pick a language that I use much more than the others - I always try to pick the best technology for the task. On top of that, I just experiment a lot. If I had to specify some of the languages that I use the most, those will be <Acc>JS</Acc> (mainly for Web) and <Acc>Lua</Acc> (mostly for toy projects) with <Acc>V</Acc> being a language I want to learn and use more.
-            </TimelineItem>
-        </Timeline>
-    </TSection>
-
-    <TSection title="What I create">
-        I build different kinds of projects, however in this section I'd like to underline my love for programming languages. I have created several of them in the past, such as
-        <Acc>T^ (TGlyph)</Acc>, <Acc>T* (TOSTER)</Acc>, <Acc>mini-rip</Acc> & <Acc>oko-lang</Acc>. The whole process of creating a language (often an esoteric one) just makes me go wild.
-
-        <div class="text-center flex justify-center items-center m-3 mb-10 text-2xl">
-            <a href="/projects/" class="group p-3 rounded-xl border-1 border-tBLUE/20 text-tBLUE bg-tBLUE/5 hover:border-tBLUE/40 hover:bg-tBLUE/10 font-bold shadow-lg shadow-tBLUE/5 hover:shadow-tBLUE/15 transition ease-in-out duration-300 hover:-translate-y-1">
-                View All Projects <span class="-ml-1 inline-block transition ease-in-out duration-300 group-hover:translate-x-[2.5px]">➞</span>
-            </a>
-        </div>
-
-        <p class="italic">
-            I believe that all software should be free to use and that open-source should be the global standard. I always attempt to create and contribute to innovative and promising projects.
-        </p>
-    </TSection>
-
-    <TSection title="Get in touch">
-        Want to get in touch with me? No problem – I would be happy to collaborate with you or answer some questions.
-
-        <div class="m-3 flex justify-center flex-col lg:flex-row">
-            <ConnectionCard href="https://www.onlito.link/0ycmTk" emoji="💬" title="Discord Community" description="Most reliable way, I chat there daily"/>
-            <ConnectionCard href="https://t.me/tixonochek" emoji="📱" title="Telegram" description="Quick messages and responses"/>
-            <ConnectionCard href="mailto:awonderfulwise@gmail.com" emoji="✉️" title="Email" description="For formal inquiries and projects"/>
-        </div>
-
-        <div class="mt-10">
-            <iframe src="https://discord.com/widget?id=1051655906322030592&theme=dark" class="w-full" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" title="Discord–віджет"></iframe>
-        </div>
-    </TSection>
+      <div class="border-zinc-700 bg-zinc-950 p-3 border-1 rounded-xl">
+        <span class="text-tYELLOW font-semibold text-4xl">{projCount}</span>
+        <br />
+        projects built
+      </div>
+    </div>
+  </div>
 </div>
+
+<TSection title="TL;DR">
+  My name is Tykhon. Driven by curiosity, I started coding at 8 years old. Rather than focusing on a single niche or building a large portfolio, I have spent my time exploring a wide range of languages and technologies, which sparked my passion for programming language creation. I have also created a thriving Ukrainian Discord community for developers. I am a native speaker of Ukrainian, Russian, and Polish, fluent in English, and a dedicated student who is currently researching possible career paths, while leaning towards embedded systems. I wholeheartedly support open-source software.
+</TSection>
+
+<div class="lg:grid lg:grid-cols-4 mt-2">
+  <InfoCard emoji="🛠️" title="Tech Explorer">
+    Instead of sticking to one niche, I experiment with diverse technologies and programming languages.
+  </InfoCard>
+
+  <InfoCard emoji="🚀" title="Language Creator">
+    I have a passion for designing and building my own programming languages from the ground up.
+  </InfoCard>
+
+  <InfoCard emoji="🔌" title="Embedded Systems">
+    I am currently researching low-level engineering and embedded programming.
+  </InfoCard>
+
+  <InfoCard emoji="🌍" title="Open Source">
+    I am a supporter of free, <span class="whitespace-nowrap">open-source software.</span>
+  </InfoCard>
+</div>
+
+<div class="text-center p-3 text-2xl font-semibold"> 
+  🇺🇦 From Ukraine <span class="hidden lg:inline">•</span>
+  <br class="lg:hidden" /> <em class="whitespace-nowrap">#STOP_WAR_IN_UKRAINE</em>
+</div>
+<br />
+
+<TSection title="My programming journey" class="lg:p-10 lg:pt-5">
+  <Timeline>
+    <TimelineItem title="The Beginning">
+      My story began at 8 years old. Since then, I've fallen in love with technology and everything related to it, including programming, which I'm fascinated by to this very day.
+    </TimelineItem>
+
+    <TimelineItem title="Language Exploration">
+      Over the years, I have experimented with various programming languages, including
+      <Acc><Icon name="python"/>Python</Acc>, <Acc><Icon name="js"/>JS</Acc>, <Acc><Icon name="ts"/>TS</Acc>,
+      <Acc><Icon name="csharp"/>C#</Acc>, <Acc><Icon name="c"/></Acc>,
+      <Acc><Icon name="cpp"/>C++</Acc>, <Acc><Icon name="rust"/>Rust</Acc>,
+      <Acc><Icon name="haskell"/>Haskell</Acc>, <Acc><Icon name="fsharp"/>F#</Acc>,
+      <Acc><Icon name="julia"/>Julia</Acc>, <Acc><Icon name="scala"/>Scala</Acc>,
+      <Acc><Icon name="r"/>R</Acc>, <Acc><Icon name="lua"/>Lua</Acc>,
+      <Acc><Icon name="apl"/>APL</Acc>, and many others. I'm by no means trying to say that I <em>"know"</em> all of them inside-out — just that I've explored them at some point.
+    </TimelineItem>
+
+    <TimelineItem title="Finding My Favorites">
+      Some languages like <Acc><Icon name="java"/>Java</Acc> and <Acc> <Icon name="haskell"/>Haskell</Acc> were brief experiments. Others like <Acc><Icon name="csharp"/>C#</Acc> stayed with me much longer. <Acc><Icon name="python"/>Python</Acc> and <Acc><Icon name="ts"/>TS</Acc> became my go-to choices for extended periods.
+    </TimelineItem>
+
+    <TimelineItem isLast title="The Present">
+      At the moment, I am shifting my focus from high-level exploration to lower level engineering. Embedded programming is what I am currently leaning towards and interested in the most, but it's worth keeping in mind that my preferences could still change. <Acc><Icon name="rust"/>Rust</Acc>, <Acc><Icon name="c"/></Acc> & <Acc><Icon name="cpp"/>C++</Acc> are all languages that I will need to perfect if I wanna actually succeed as an embedded systems engineer. Will I commit to that? We'll see rather soon.
+    </TimelineItem>
+  </Timeline>
+</TSection>
+
+<TSection title="What I build">
+  As I've stated before, rather than focusing on a single niche, I have spent my time exploring a wide range of languages and technologies. That exploration sparked my passion for creating programming languages. Over the course of the last 2 years, I have built four of them — some esoteric, others more traditional. I have successfully built and organized a thriving Ukrainian Discord community for developers and programmers, which continues to be a priceless community management and leadership experience for me to this day. In light of my latest interests and lean towards embedded systems and hardware, I've recently hand-soldered and assembled a custom mechanical keyboard for myself, which makes programming more comfortable than ever before. I plan on expanding my portfolio with impressive, valuable projects as soon as possible — after all, I seem to have finally found the right direction for me.
+  <TAnchor href="/projects/">Check my projects out for yourself!</TAnchor>
+</TSection>
+
+<TSection title="Get in touch">
+  Want to get in touch with me? No problem — I would be happy to collaborate
+  with you or answer some questions.
+
+  <div class="m-3 flex justify-center flex-col lg:flex-row">
+    <ConnectionCard
+      href="https://www.onlito.link/0ycmTk"
+      emoji="💬"
+      title="Discord Community"
+      description="Most reliable way, I chat there daily"
+    />
+    <ConnectionCard
+      href="https://t.me/tixonochek"
+      emoji="📱"
+      title="Telegram"
+      description="Quick messages and responses"
+    />
+    <ConnectionCard
+      href="mailto:awonderfulwise@gmail.com"
+      emoji="✉️"
+      title="Email"
+      description="For formal inquiries and projects"
+    />
+  </div>
+
+  <div class="mt-5 lg:mx-20 mx-5">
+    <iframe
+      src="https://discord.com/widget?id=1051655906322030592&theme=dark"
+      class="w-full"
+      height="400"
+      allowtransparency="true"
+      frameborder="0"
+      sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+      title="Discord–віджет"
+    ></iframe>
+  </div>
+</TSection>

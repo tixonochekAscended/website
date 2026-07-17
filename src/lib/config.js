@@ -1,3 +1,15 @@
 export const config = {
-    winterTheme: false
+    winterTheme: false,
+
+    navItems: [
+      {
+        "name": "Home",
+        "href": "/"
+      },
+    
+      {
+        "name": "Projects",
+        "href": "/projects/"
+      }
+    ]
 }

@@ -13,7 +13,7 @@
 </svelte:head>
 
 <div class="flex justify-center items-center flex-col space-y-4">
-    <input bind:value={search} class="font-semibold focus:outline-none lg:w-1/2 w-full text-xl border-1 border-tBLUE/20 bg-tBLUE/5 rounded-xl p-3 text-tYELLOW transition ease-in-out duration-300 hover:border-tBLUE/40 hover:bg-tBLUE/10" type="text" placeholder="🔎 Search projects...">
+    <input bind:value={search} class="font-semibold focus:outline-none lg:w-1/2 w-full text-xl border-1 border-tBLUE/20 bg-tBLUE-muted rounded-xl p-3 text-tYELLOW transition ease-in-out duration-300 hover:border-tBLUE/40 hover:bg-tBLUE-mutish" type="text" placeholder="🔎 Search projects...">
     <p class="italic">Showing {projects.length} projects</p>
 
     {#if projects.length % 2 == 0}
@@ -24,6 +24,7 @@
                     name={proj.name} 
                     description={proj.description} 
                     img={proj.img}
+                    projIcons={proj.icons}
                 />
             {/each}
         </div>
@@ -35,17 +36,21 @@
                     name={proj.name} 
                     description={proj.description} 
                     img={proj.img}
+                    projIcons={proj.icons}
                 />
             {/each}
         </div>
 
         <div class="flex justify-center items-center">
-            <ProjectCard 
+          <div class="lg:w-[60%]">
+            <ProjectCard s
                 href={projects.at(-1).url} 
                 name={projects.at(-1).name} 
                 description={projects.at(-1).description} 
                 img={projects.at(-1).img}
+                projIcons={projects.at(-1).icons}
             />
+          </div>
         </div>
     {/if}
 </div>

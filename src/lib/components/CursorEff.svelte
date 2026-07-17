@@ -1,5 +1,6 @@
 <script>
     import { onMount } from "svelte";
+    import { config } from "$lib/config";
 
     let {
         trailLength = 10,
@@ -38,12 +39,12 @@
 
 {#each trail as point, i}
     <div
-        class="fixed pointer-events-none rounded-full z-[9999] opacity-20"
+        class="fixed pointer-events-none rounded-full z-[9999] opacity-10"
         style="
     width: {size}px;
     height: {size}px;
     transform: translate3d({point.x - size / 2}px, {point.y - size / 2}px, 0);
-    background: rgba(41, 37, 36, {(i + 1) / trailLength});
+    background: rgba({config.winterTheme ? '237, 123, 123' : '173, 216, 230'}, {(i + 1) / trailLength});
   "
     ></div>
 {/each}
