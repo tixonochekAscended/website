@@ -62,7 +62,7 @@
   <CursorEff spacing="0.4" />
 </div>
 
-<div class="flex flex-col min-h-screen">
+<div class="flex flex-col min-h-dvh">
   <div class="text-2xl">
     <NavBar />
   </div>
