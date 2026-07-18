@@ -2,15 +2,7 @@
     import { config } from "$lib/config";
 </script>
 
-<svelte:head>
-  <style>
-    html {
-      background-color: #1e1a30;
-    }
-  </style>
-</svelte:head>
 
-<!--
 <svelte:head>
   {#if config.winterTheme}
     <style>
@@ -18,7 +10,6 @@
         min-height: 100%;
         background-color: #040407;
         background: linear-gradient(150deg, rgb(5 5 5 / 0.90) 0%, #050509 50%, #040407 100%);
-        background-attachment: fixed;
       }
     </style>
   {:else}
@@ -27,12 +18,10 @@
         min-height: 100%;
         background-color: #040407;
         background: linear-gradient(150deg, rgb(14 14 24 / 0.925) 0%, #050509 50%, #040407 100%);
-        background-attachment: fixed;
       }
     </style>
   {/if}
 </svelte:head>
--->
 
 <!--
  svelte-ignore element_invalid_self_closing_tag
