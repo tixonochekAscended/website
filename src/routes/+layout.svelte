@@ -9,7 +9,7 @@
   import NavBar from "$lib/components/NavBar.svelte";
   import Snow from "$lib/components/Snow.svelte";
   import { config } from "$lib/config";
-    import Footer from "$lib/components/Footer.svelte";
+  import Footer from "$lib/components/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -62,7 +62,7 @@
   <CursorEff spacing="0.4" />
 </div>
 
-<div class="flex flex-col min-h-dvh">
+<div class="flex flex-col min-h-screen">
   <div class="text-2xl">
     <NavBar />
   </div>
