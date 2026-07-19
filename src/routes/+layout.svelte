@@ -21,6 +21,7 @@
   <link rel="canonical" href="https://tixonochek.dev/" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#add8e6">
+  <meta name="google-site-verification" content="AK8VFDKnTPRjuKnNubbJ0snrttUwUR47Y8yoEqeER1M" />
 
   <!-- Open Graph / Facebook / Discord / Telegram Previews -->
   <meta property="og:site_name" content="tixonochek" />
