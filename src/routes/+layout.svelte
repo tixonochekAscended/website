@@ -30,7 +30,7 @@
   <meta property="og:image" content="https://tixonochek.dev{banner}"/>
 
   <!-- X (Twitter) Card Previews -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="https://tixonochek.dev/" />
   <meta name="twitter:title" content="tixonochek — Passionate Developer & Hardworking Student" />
   <meta name="twitter:description" content="Explore my portfolio, get to know my story and get in touch with me." />
