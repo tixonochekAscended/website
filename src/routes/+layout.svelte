@@ -20,6 +20,7 @@
   <meta name="description" content="Portfolio of tixonochek, a passionate developer and hardworking student who builds open-source software and creates custom programming languages." />
   <link rel="canonical" href="https://tixonochek.dev/" />
   <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#add8e6">
 
   <!-- Open Graph / Facebook / Discord / Telegram Previews -->
   <meta property="og:site_name" content="tixonochek" />
