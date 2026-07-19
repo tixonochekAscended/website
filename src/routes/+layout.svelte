@@ -35,7 +35,7 @@
         --color-tBLUE: #ed7b7b;
         --color-tBLUE-muted: #100a0e;
         --color-tBLUE-mutish: #1c1114;
-        --color-tBLUE-light: #cfeff9;
+        --color-tBLUE-light: #f99d9d;
       }
     </style>
   {:else}
