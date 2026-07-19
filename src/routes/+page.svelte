@@ -142,7 +142,7 @@
   <TAnchor href="/projects/">Check my projects out for yourself!</TAnchor>
 </TSection>
 
-<TSection title="Get in touch">
+<TSection title="Get in touch" id="contact" outer_class="scroll-mt-60">
   Want to get in touch with me? No problem — I would be happy to collaborate
   with you or answer some questions.
 

@@ -74,7 +74,9 @@
       : 'full'} transition duration-300 ease-in-out"
   >
     {#each config.navItems as navItem}
-      <a href={navItem.href}>{navItem.name}</a>
+      <a onclick={() => {
+        isOpen = false
+      }} href={navItem.href}>{navItem.name}</a>
     {/each}
   </div>
 

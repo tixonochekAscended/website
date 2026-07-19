@@ -10,7 +10,7 @@
     ></div>
 
     <div>
-        <h2 class="text-xl font-bold mb-4 text-tYELLOW">{title}</h2>
+        <h3 class="text-xl font-bold mb-4 text-tYELLOW">{title}</h3>
         <div class="text-gray-300 leading-relaxed">
             {@render children?.()}
         </div>

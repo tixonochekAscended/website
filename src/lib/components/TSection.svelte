@@ -4,7 +4,7 @@
     let props = $props();
 </script>
 
-<section class="mt-5 lg:mt-10 {props.oclass ?? ""}">
+<section id="{props.id}" class="mt-5 lg:mt-10 {props.outer_class ?? ""}">
     <h2 class="text-tYELLOW text-3xl lg:text-4xl font-semibold">{props.title}</h2>
     <SectionAccent />
 

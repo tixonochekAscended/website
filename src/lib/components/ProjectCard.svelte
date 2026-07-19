@@ -25,25 +25,25 @@
     class="absolute lg:w-[{img_size}%] w-[{img_size +
       25}%] inset-0 mx-auto h-full object-cover"
     src={img}
-    alt=""
+    alt="Project-related Logo, Banner or Screenshot"
     style="mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,{center_opacity}) {gradient_smoothness}%, rgba(0,0,0,{center_opacity}) {100 -
       gradient_smoothness}%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,{center_opacity}) {gradient_smoothness}%, rgba(0,0,0,{center_opacity}) {100 -
       gradient_smoothness}%, transparent 100%);"
   />
 
-  <div class="relative z-10 pb-10 lg:pb-0">
-    <div class="text-tYELLOW text-2xl font-bold">
+  <section class="relative z-10 pb-10 lg:pb-0">
+    <h3 class="text-tYELLOW text-2xl font-bold">
       {name}
-    </div>
+    </h3>
 
-    <div class="text-lg">
+    <p class="text-lg">
       {description}
-    </div>
-  </div>
+    </p>
+  </section>
 
-  <div class="absolute right-0 lg:top-0 bottom-0 p-4 z-5 text-tBLUE">
+  <aside class="absolute right-0 lg:top-0 bottom-0 p-4 z-5 text-tBLUE">
     {#each icons as icon}
       <Icon name={icon} width="6" color="tBLUE" />
     {/each}
-  </div>
+  </aside>
 </a>

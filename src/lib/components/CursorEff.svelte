@@ -9,7 +9,7 @@
     } = $props();
 
     let cursor = { x: 0, y: 0 };
-    let trail = $state(
+    let trail = $derived(
         Array(trailLength).fill({ x: 0, y: 0 })
     );
 
